@@ -1,0 +1,616 @@
+[
+  {
+    "id": "EQ001",
+    "question": "What financial risks does the MiCAR Risk Disclosure identify for clients considering crypto-assets?",
+    "category": "MiCAR risk",
+    "department_use_case": "Compliance / customer support",
+    "gold_passage": "MiCAR Risk Disclosure financial risk warning: volatility, loss of value, market/liquidity/financial risk.",
+    "source_match": [
+      "MiCAR Risk Disclosure.pdf"
+    ],
+    "min_groups": 2,
+    "groups": [
+      [
+        "volatility",
+        "volatile"
+      ],
+      [
+        "loss of value",
+        "lose value",
+        "loss"
+      ],
+      [
+        "liquidity"
+      ],
+      [
+        "market risk",
+        "financial risk"
+      ]
+    ],
+    "expected_answer_summary": "Should mention that crypto-assets can be volatile and may involve loss of value, market, liquidity, and other financial risks. It should avoid presenting crypto-assets as safe or guaranteed."
+  },
+  {
+    "id": "EQ002",
+    "question": "Which cybersecurity, custody, operational, fraud, and technology risks are described in the MiCAR Risk Disclosure?",
+    "category": "MiCAR risk",
+    "department_use_case": "Risk / compliance",
+    "gold_passage": "MiCAR Risk Disclosure operational and technology risks: cyber, custody/control, operational, fraud/scam, technology/blockchain/network risks.",
+    "source_match": [
+      "MiCAR Risk Disclosure.pdf"
+    ],
+    "min_groups": 3,
+    "groups": [
+      [
+        "cyber",
+        "cybersecurity",
+        "cyberattack"
+      ],
+      [
+        "custody",
+        "control"
+      ],
+      [
+        "operational",
+        "operations"
+      ],
+      [
+        "fraud",
+        "scam"
+      ],
+      [
+        "technology",
+        "network",
+        "blockchain"
+      ]
+    ],
+    "expected_answer_summary": "Should identify risk categories such as cyberattack, custody/control risks, operational failures, fraud/scams, technology failures, blockchain/network issues, and similar risks described in the disclosure."
+  },
+  {
+    "id": "EQ006",
+    "question": "What client asset safeguarding principles does the Custody Statement say PESL adopts?",
+    "category": "Custody safeguarding",
+    "department_use_case": "Compliance / custody operations",
+    "gold_passage": "Custody Statement client asset safeguarding principles and holding/segregation controls.",
+    "source_match": [
+      "Custody Statement.pdf"
+    ],
+    "min_groups": 2,
+    "groups": [
+      [
+        "safeguard",
+        "safeguarding"
+      ],
+      [
+        "client crypto-assets",
+        "client assets"
+      ],
+      [
+        "segregated",
+        "segregation",
+        "separate"
+      ],
+      [
+        "custody"
+      ]
+    ],
+    "expected_answer_summary": "Should describe principles for safeguarding client crypto-assets, including holding/segregation arrangements and controls intended to protect client assets."
+  },
+  {
+    "id": "EQ009",
+    "question": "What does the Custody Statement say about security, incident response, wind-down, and business continuity planning for client assets?",
+    "category": "Custody safeguarding",
+    "department_use_case": "Risk / operations",
+    "gold_passage": "Custody Statement security, incident response, wind-down and business continuity planning.",
+    "source_match": [
+      "Custody Statement.pdf"
+    ],
+    "min_groups": 2,
+    "groups": [
+      [
+        "security"
+      ],
+      [
+        "incident"
+      ],
+      [
+        "wind-down",
+        "wind down"
+      ],
+      [
+        "business continuity",
+        "continuity"
+      ]
+    ],
+    "expected_answer_summary": "Should summarize security controls, incident response or escalation, and planning for wind-down/business continuity as described in the statement."
+  },
+  {
+    "id": "EQ010",
+    "question": "Which crypto-asset transfer services does Kraken describe in the transfer services disclosure?",
+    "category": "Crypto transfers",
+    "department_use_case": "Operations / support",
+    "gold_passage": "Crypto-Asset Transfer Services Disclosure services: deposits, withdrawals, Kraken Pay or transfer services.",
+    "source_match": [
+      "Crypto-Asset Transfer Services Disclosure.pdf"
+    ],
+    "min_groups": 2,
+    "groups": [
+      [
+        "deposit",
+        "deposits"
+      ],
+      [
+        "withdrawal",
+        "withdrawals"
+      ],
+      [
+        "kraken pay"
+      ],
+      [
+        "transfer services",
+        "crypto-asset transfer"
+      ]
+    ],
+    "expected_answer_summary": "Should identify relevant transfer services such as deposits, withdrawals, and Kraken Pay or other crypto-asset transfer services covered by the disclosure."
+  },
+  {
+    "id": "EQ012",
+    "question": "Under what conditions may Kraken reject or fail to process a crypto-asset transfer instruction?",
+    "category": "Crypto transfers",
+    "department_use_case": "Operations / compliance",
+    "gold_passage": "Transfer disclosure circumstances where Kraken may reject, fail, delay, or not process transfer instructions.",
+    "source_match": [
+      "Crypto-Asset Transfer Services Disclosure.pdf"
+    ],
+    "min_groups": 2,
+    "groups": [
+      [
+        "reject",
+        "rejected"
+      ],
+      [
+        "fail",
+        "failed",
+        "failure"
+      ],
+      [
+        "process",
+        "processing"
+      ],
+      [
+        "instruction",
+        "instructions"
+      ],
+      [
+        "insufficient",
+        "unsupported",
+        "compliance",
+        "security"
+      ]
+    ],
+    "expected_answer_summary": "Should mention checks, incorrect/incomplete instructions, network or technical issues, legal/regulatory restrictions, risk/security concerns, or other conditions described by the disclosure."
+  },
+  {
+    "id": "EQ014",
+    "question": "Can Kraken reverse or cancel a transfer after a client submits the instruction?",
+    "category": "Crypto transfers",
+    "department_use_case": "Customer support",
+    "gold_passage": "Transfer disclosure finality: transfers may not be reversible/cancellable after submission or broadcast.",
+    "source_match": [
+      "Crypto-Asset Transfer Services Disclosure.pdf"
+    ],
+    "min_groups": 2,
+    "groups": [
+      [
+        "reverse",
+        "reversible"
+      ],
+      [
+        "cancel",
+        "cancellation"
+      ],
+      [
+        "submitted",
+        "submission",
+        "broadcast"
+      ],
+      [
+        "blockchain",
+        "network"
+      ]
+    ],
+    "expected_answer_summary": "Should state that blockchain transfers may not be cancellable or reversible once submitted/processed, subject to the disclosure wording."
+  },
+  {
+    "id": "EQ015",
+    "question": "Which execution venues are described in the Order Execution Policy Summary?",
+    "category": "Order execution",
+    "department_use_case": "Trading operations",
+    "gold_passage": "Order Execution Policy Summary execution venues and execution arrangements.",
+    "source_match": [
+      "Order Execution Policy Summary.pdf"
+    ],
+    "min_groups": 2,
+    "groups": [
+      [
+        "execution venue",
+        "venues"
+      ],
+      [
+        "kraken",
+        "payward"
+      ],
+      [
+        "order"
+      ],
+      [
+        "trading venue"
+      ]
+    ],
+    "expected_answer_summary": "Should identify the execution venues or venue types described by the policy, including Kraken or relevant group/trading venue arrangements if stated."
+  },
+  {
+    "id": "EQ018",
+    "question": "How does the Order Execution Policy Summary describe order handling, monitoring, review, and notification of material changes?",
+    "category": "Order execution",
+    "department_use_case": "Compliance / trading operations",
+    "gold_passage": "Order Execution Policy order handling plus monitoring, review and material-change notification.",
+    "source_match": [
+      "Order Execution Policy Summary.pdf"
+    ],
+    "min_groups": 3,
+    "groups": [
+      [
+        "order handling",
+        "handling"
+      ],
+      [
+        "monitor",
+        "monitoring"
+      ],
+      [
+        "review",
+        "reviewed"
+      ],
+      [
+        "material change",
+        "material changes"
+      ],
+      [
+        "notify",
+        "notification"
+      ]
+    ],
+    "expected_answer_summary": "Should summarize order handling procedures and say the policy/arrangements are monitored/reviewed and material changes are notified or published as described."
+  },
+  {
+    "id": "EQ019",
+    "question": "What personal data may Kraken collect during account opening and ongoing service use?",
+    "category": "Privacy",
+    "department_use_case": "Privacy / customer support",
+    "gold_passage": "Privacy Notice categories of personal data collected during account opening and ongoing service use.",
+    "source_match": [
+      "Privacy Notice.pdf",
+      "https://www.kraken.com/gb/legal/privacy",
+      "https://www.kraken.com/en-gb/legal/privacy"
+    ],
+    "min_groups": 3,
+    "groups": [
+      [
+        "full name",
+        "biographical"
+      ],
+      [
+        "contact information",
+        "address"
+      ],
+      [
+        "financial",
+        "tax"
+      ],
+      [
+        "trading information",
+        "trading activity"
+      ],
+      [
+        "verification information",
+        "identity"
+      ]
+    ],
+    "expected_answer_summary": "Should list categories such as identity, contact, verification/KYC, financial, transaction, device, usage, communications, and other personal data described in the notice."
+  },
+  {
+    "id": "EQ023",
+    "question": "What does the Privacy Notice say about personal data retention and privacy considerations when users use digital assets or blockchains?",
+    "category": "Privacy",
+    "department_use_case": "Privacy / blockchain operations",
+    "gold_passage": "Privacy Notice retention and digital asset/blockchain privacy considerations.",
+    "source_match": [
+      "Privacy Notice.pdf",
+      "https://www.kraken.com/gb/legal/privacy",
+      "https://www.kraken.com/en-gb/legal/privacy"
+    ],
+    "min_groups": 2,
+    "groups": [
+      [
+        "retain",
+        "retention"
+      ],
+      [
+        "personal data"
+      ],
+      [
+        "digital asset",
+        "digital assets"
+      ],
+      [
+        "blockchain",
+        "public blockchain"
+      ]
+    ],
+    "expected_answer_summary": "Should explain retention depends on legal/business needs and that blockchain transactions may be public, permanent, or outside Kraken control as described."
+  },
+  {
+    "id": "EQ024",
+    "question": "Which Terms of Service should staff point a user to depending on whether they live in Canada, the EEA, or elsewhere?",
+    "category": "Terms routing",
+    "department_use_case": "Customer support",
+    "gold_passage": "Terms overview directs users to Canada, EEA, or general/global terms depending on residence/location.",
+    "source_match": [
+      "Terms of Service.pdf"
+    ],
+    "min_groups": 3,
+    "groups": [
+      [
+        "canada",
+        "canadian"
+      ],
+      [
+        "eea",
+        "european economic area"
+      ],
+      [
+        "global",
+        "elsewhere"
+      ],
+      [
+        "terms of service",
+        "terms"
+      ]
+    ],
+    "expected_answer_summary": "Should route Canadian clients to Canadian Terms, EEA clients to EEA Terms, and other/global clients to Global Terms or applicable Terms of Service."
+  },
+  {
+    "id": "EQ026",
+    "question": "What limitations can prevent a global user from completing a crypto withdrawal or fiat redemption?",
+    "category": "Terms",
+    "department_use_case": "Customer support / operations",
+    "gold_passage": "Global Terms limitations preventing crypto withdrawal or fiat redemption.",
+    "source_match": [
+      "Global Terms of Service.pdf"
+    ],
+    "min_groups": 2,
+    "groups": [
+      [
+        "withdrawal",
+        "withdraw"
+      ],
+      [
+        "redemption",
+        "redeem"
+      ],
+      [
+        "limitations",
+        "limit"
+      ],
+      [
+        "fiat currency",
+        "digital asset"
+      ]
+    ],
+    "expected_answer_summary": "Should mention limits, restrictions, unavailable assets/currencies, holds, compliance checks, legal/regulatory restrictions, unsupported services, or account status issues described in the Global Terms."
+  },
+  {
+    "id": "EQ028",
+    "question": "Which Crypto-asset Core Services and E-money Core Services are described in the EEA Terms?",
+    "category": "EEA terms",
+    "department_use_case": "EEA support / legal",
+    "gold_passage": "EEA Terms Crypto-asset Core Services and E-money Core Services.",
+    "source_match": [
+      "EEA Terms of Service.pdf"
+    ],
+    "min_groups": 2,
+    "groups": [
+      [
+        "crypto-asset core services",
+        "crypto asset core services"
+      ],
+      [
+        "e-money core services",
+        "e money core services"
+      ],
+      [
+        "core services"
+      ],
+      [
+        "payward europe solutions",
+        "pesl"
+      ]
+    ],
+    "expected_answer_summary": "Should identify or summarize the crypto-asset core services and e-money core services provided under the EEA Terms."
+  },
+  {
+    "id": "EQ030",
+    "question": "What vendor or group-company conflict-of-interest risks should staff consider before approving a relationship or execution arrangement?",
+    "category": "Conflicts",
+    "department_use_case": "Procurement / compliance",
+    "gold_passage": "Conflict of Interest Disclosure vendor/group-company conflicts and execution arrangement risks.",
+    "source_match": [
+      "Conflict of Interest Disclosure.pdf"
+    ],
+    "min_groups": 2,
+    "groups": [
+      [
+        "conflict",
+        "conflicts"
+      ],
+      [
+        "group",
+        "group company",
+        "intra-group"
+      ],
+      [
+        "execution",
+        "trading venue"
+      ],
+      [
+        "vendor",
+        "third party"
+      ]
+    ],
+    "expected_answer_summary": "Should identify conflicts such as group-company involvement, trading venue relationships, vendor incentives, preferential treatment, management/shareholder influence, and disclosure/control requirements where relevant."
+  },
+  {
+    "id": "EQ031",
+    "question": "Where is Kraken licensed or regulated, at a high level?",
+    "category": "Regulation",
+    "department_use_case": "Compliance / support",
+    "gold_passage": "Kraken support page explaining where Kraken is licensed or regulated at high level.",
+    "source_match": [
+      "https://support.kraken.com/articles/where-is-kraken-licensed-or-regulated"
+    ],
+    "min_groups": 2,
+    "groups": [
+      [
+        "licensed",
+        "regulated"
+      ],
+      [
+        "kraken"
+      ],
+      [
+        "jurisdiction",
+        "region",
+        "country"
+      ],
+      [
+        "legal",
+        "regulatory"
+      ]
+    ],
+    "expected_answer_summary": "Should summarize that Kraken operates through regulated or licensed entities in multiple jurisdictions and direct users to the jurisdiction-specific licensing/regulation page."
+  },
+  {
+    "id": "EQ033",
+    "question": "What should support tell a user who asks about cash deposit options, fees, minimums, and processing times?",
+    "category": "Funding",
+    "department_use_case": "Funding support",
+    "gold_passage": "Cash deposit options support page: fees, minimums, maximums and processing times.",
+    "source_match": [
+      "https://support.kraken.com/articles/360000381846-cash-deposit-options-fees-minimums-and-processing-times-"
+    ],
+    "min_groups": 3,
+    "groups": [
+      [
+        "cash deposit",
+        "deposit options"
+      ],
+      [
+        "fees"
+      ],
+      [
+        "minimum",
+        "minimums"
+      ],
+      [
+        "processing times",
+        "processing"
+      ]
+    ],
+    "expected_answer_summary": "Should say these vary by currency/method/region and the user should review the cash deposit options page for fees, minimums, and processing times."
+  },
+  {
+    "id": "EQ037",
+    "question": "How should staff explain Kraken verification levels to a user?",
+    "category": "Verification",
+    "department_use_case": "Onboarding support",
+    "gold_passage": "Verification levels support page explaining account verification levels and requirements.",
+    "source_match": [
+      "https://support.kraken.com/articles/360001395743-verification-levels-explained"
+    ],
+    "min_groups": 2,
+    "groups": [
+      [
+        "verification",
+        "verified"
+      ],
+      [
+        "levels"
+      ],
+      [
+        "account"
+      ],
+      [
+        "requirements",
+        "limits"
+      ]
+    ],
+    "expected_answer_summary": "Should explain that verification levels determine available features/limits and require different information or documents depending on the level and region."
+  },
+  {
+    "id": "EQ040",
+    "question": "What does Kraken recommend for securing an account with two-factor authentication?",
+    "category": "Security",
+    "department_use_case": "Security / support",
+    "gold_passage": "2FA security support page recommending two-factor authentication for account security.",
+    "source_match": [
+      "https://support.kraken.com/articles/360000426923-secure-your-account-with-two-factor-authentication-2fa-"
+    ],
+    "min_groups": 2,
+    "groups": [
+      [
+        "two-factor authentication",
+        "2fa"
+      ],
+      [
+        "secure your account",
+        "security"
+      ],
+      [
+        "sign-in",
+        "login"
+      ],
+      [
+        "authenticator",
+        "passkey"
+      ]
+    ],
+    "expected_answer_summary": "Should explain that 2FA adds protection and can be configured for sign-in and other account actions, with authenticator apps/security keys as described."
+  },
+  {
+    "id": "EQ044",
+    "question": "What should a developer be told about Kraken's trading API options?",
+    "category": "Developer/API",
+    "department_use_case": "Developer support",
+    "gold_passage": "Trading API feature page describing REST, WebSocket and FIX API options.",
+    "source_match": [
+      "https://www.kraken.com/features/trading-api"
+    ],
+    "min_groups": 2,
+    "groups": [
+      [
+        "api"
+      ],
+      [
+        "rest"
+      ],
+      [
+        "websocket",
+        "websockets"
+      ],
+      [
+        "fix"
+      ]
+    ],
+    "expected_answer_summary": "Should summarize that Kraken offers REST, WebSocket, and FIX APIs or similar trading API access for market data, account, and trading workflows, with docs for implementation."
+  }
+]

@@ -1,0 +1,51 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+frontend/.env.local
+
+# Python
+.venv/
+backend/.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Frontend dependencies and builds
+frontend/node_modules/
+frontend/dist/
+node_modules/
+dist/
+
+# Generated application data
+backend/storage/
+backend/outputs/
+backend/evaluation/runs/
+backend/evaluation/review_workbooks/
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs and local process files
+*.log
+*.pid
+
+# Generated evaluation previews and temporary exports
+/outputs/
+~$*.xlsx
+*.inspect.ndjson
+*_preview.png
+backend/evaluation/chat_log_exports/
+backend/evaluation/synthetic_user_tests/
+backend/evaluation/results/confusion_matrices/
+
+# Dissertation documents are submitted separately
+docs/
+*.docx
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

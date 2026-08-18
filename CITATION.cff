@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use or refer to this academic prototype, please cite it using the information below."
+title: "Kraken Policy Assistant: An Auditable RAG Application"
+type: software
+authors:
+  - family-names: Edwards
+    given-names: Andre
+version: 1.0.0
+date-released: 2026-08-18
+repository-code: "https://github.com/Andre-Edwards/MSc-Kraken-RAG-Submission"
+url: "https://msc-kraken-rag-1.onrender.com/"
