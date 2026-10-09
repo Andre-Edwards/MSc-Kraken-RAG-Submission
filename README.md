@@ -1,8 +1,16 @@
 # Kraken Policy Assistant
 
+**Python · FastAPI · React · TypeScript · ChromaDB · SQLite**
+
+An MSc dissertation prototype that answers questions over public policy documents with citations and inspectable evidence.
+
+**Result:** Hybrid retrieval achieved source-level macro F1@5 of **0.889**, compared with **0.813** for fixed-size retrieval on **59 labelled questions**. This measures retrieval quality, not generated-answer accuracy.
+
+[Project walkthrough](PORTFOLIO.md) · [Reproduce the project](REPRODUCIBILITY.md) · [Evaluation method and results](backend/evaluation/README.md)
+
 This repository contains the practical part of my MSc dissertation project. I built a retrieval-augmented generation (RAG) application that answers questions using a controlled collection of public Kraken policy documents and selected Kraken web pages.
 
-The aim was not simply to build another chatbot. I wanted to investigate how the way documents are divided and retrieved affects whether an answer is complete, grounded in the source material and supported by useful citations.
+I investigated how document chunking and retrieval affect whether answers are grounded in source material and supported by useful citations.
 
 My research question is:
 
@@ -268,6 +276,7 @@ The main retrieval measures were:
 The headline F1@5 results were:
 
 | Evaluation | Fixed-size | Structure-aware | Hybrid |
+|---|---:|---:|---:|
 | Original source-level set, n=59 | 0.813 | 0.789 | **0.889** |
 | Expanded source-level set, n=46 | 0.764 | 0.798 | **0.879** |
 | Chunk-level set, n=20 | 0.651 | 0.567 | **0.731** |
@@ -330,15 +339,9 @@ The exact wording can vary, but the response should primarily use evidence from 
 
 ## Live demonstration
 
-The deployed prototype is available at:
+[Open the Render prototype](https://msc-kraken-rag-1.onrender.com/).
 
-https://msc-kraken-rag-1.onrender.com/
-
-```text
-User:  demo@example.com / demo1234
-Admin: admin@example.com / admin123
-tester: tester15@example.com / tester15
-```
+Hosted availability can vary. For a repeatable review, use the local setup above or the API-key-free saved-results verification in the [project walkthrough](PORTFOLIO.md). Configure demonstration accounts locally; do not reuse local example passwords for a public deployment.
 
 ## Data and privacy
 
